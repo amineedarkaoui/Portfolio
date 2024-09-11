@@ -1,6 +1,10 @@
 import photo from '../media/website-mockup-psd.jpg'
 
-export const headerElements = ["About", "Projects", "Experiences"]
+export const headerElements = [
+    {id: 0, name: "About", scrollElement: 'about'},
+    {id: 1, name: "Projects", scrollElement: 'project'},
+    {id: 2, name: "Experiences", scrollElement: 'experience'}
+]
 
 export const aboutSection = {
     name: "Amine Edarkaoui",
@@ -9,17 +13,18 @@ export const aboutSection = {
 }
 
 export const icons = [
-    {name: 'Instagram', icon: 'mdi:instagram', link: 'https://www.instagram.com/edarkamine/'},
-    {name: 'LinkedIn', icon: 'mdi:linkedin', link: 'https://www.linkedin.com/in/amineedarkaoui/'},
-    {name: 'Github', icon: 'mdi:github', link: 'https://github.com/amminnee'},
-    {name: 'Email', icon: 'ic:baseline-email', link: 'mailto:contact@amineedarkaoui.com'},
-    {name: 'X', icon: 'prime:twitter', link: 'https://x.com/amine__ed'},
+    {id: 0, name: 'Instagram', icon: 'mdi:instagram', link: 'https://www.instagram.com/edarkamine/'},
+    {id: 1, name: 'LinkedIn', icon: 'mdi:linkedin', link: 'https://www.linkedin.com/in/amineedarkaoui/'},
+    {id: 2, name: 'Github', icon: 'mdi:github', link: 'https://github.com/amminnee'},
+    {id: 3, name: 'Email', icon: 'ic:baseline-email', link: 'mailto:contact@amineedarkaoui.com'},
+    {id: 4, name: 'X', icon: 'prime:twitter', link: 'https://x.com/amine__ed'},
 ]
 
 export const projects = {
     title: "PROJECTS",
     elements: [
         {
+            id: 0, 
             title: "AI chat bot",
             description: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly belieas necessary, making this the first true ",
             image: photo,
@@ -28,6 +33,7 @@ export const projects = {
             link: "",
         },
         {
+            id: 1, 
             title: "AI chat bot",
             description: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly belieas necessary, making this the first true ",
             image: photo,
@@ -42,6 +48,7 @@ export const experiences = {
     title: "EXPERIENCES",
     elements: [
         {
+            id: 0, 
             title: "Web development Intern",
             company: "Linkstom Group",
             description: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly belieas necessary, making this the first true ",
@@ -52,6 +59,7 @@ export const experiences = {
             year: "2024"
         },
         {
+            id: 1, 
             title: "Web development Intern",
             company: "Ministry of agriculture",
             description: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly belieas necessary, making this the first true ",
@@ -62,6 +70,7 @@ export const experiences = {
             year: "2023"
         },
         {
+            id: 2, 
             title: "Web development Intern",
             company: "Ministry of agriculture",
             description: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly belieas necessary, making this the first true ",

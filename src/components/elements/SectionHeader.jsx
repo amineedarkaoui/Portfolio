@@ -2,8 +2,8 @@ import React from 'react'
 
 const SectionHeader = (props) => {
   return (
-    <div className='flex justify-center mb-6'>
-      <p className='dark:text-white text-3xl font-bold color-trans'>{props.text}</p>
+    <div className={`sticky sm:static top-0 flex justify-center mb-2 z-10 py-3 backdrop-blur-lg w-full dark:bg-bg-dark/80 bg-bg-light/80 color-trans`}>
+      <p className='dark:text-white text-2xl font-bold color-trans'>{props.text}</p>
     </div>
   )
 }

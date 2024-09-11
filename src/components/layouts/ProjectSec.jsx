@@ -5,11 +5,11 @@ import ProjectCard from './ProjectCard'
 
 const ProjectSec = () => {
   return (
-    <div className='flex flex-col items-center'>
+    <div id="project" className='flex flex-col items-center'>
       <SectionHeader text={projects.title} />
-      <div className='grid gap-4'>
+      <div className='grid gap-4 mx-4'>
         {
-            projects.elements.map(el => <ProjectCard {...el} />)
+            projects.elements.map(el => <ProjectCard {...el} key={el.id} />)
         }
       </div>
     </div>
