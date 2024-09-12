@@ -17,7 +17,10 @@ function ExperienceCard(props) {
       }
       <div className='flex flex-col items-center'>
           <div className='color-trans w-4 h-4 border-2 dark:bg-white/20 border-black dark:border-white rounded-full' />
-          <div className='color-trans w-[2px] dark:bg-gray-700 bg-black h-full'/>
+          <div className={`h-full ${props.isLast && 'timeline-fade'}`}>
+           <div className='color-trans w-[2px] dark:bg-gray-700 bg-gray-300 h-full'/>  
+          </div>
+          
       </div>
       <div className='flex flex-col gap-2 mb-16'>
           {

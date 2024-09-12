@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Bubbles from './Bubbles'
 import LinkTo from '../elements/LinkTo'
 import { useInView } from 'react-intersection-observer'

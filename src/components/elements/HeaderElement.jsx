@@ -15,7 +15,7 @@ function HeaderElement(props) {
 
   useEffect(() => {
     const element = document.querySelector(`#${props.scrollElement}`)
-    if (scrollPosition >= (element.offsetTop - 80))
+    if (scrollPosition >= (element.offsetTop - 140))
       props.setHighlight(props.text)
   }, [scrollPosition])
 

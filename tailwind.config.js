@@ -28,7 +28,13 @@ export default {
         'color2': 'move2 50s linear infinite',
         'color3': 'move3 50s linear infinite',
         'color4': 'move4 50s linear infinite',
-        'underline': 'expand 200ms ease-in-out forwards'
+        'underline': 'expand 200ms ease-in-out forwards',
+        'header-in': 'hop-in 200ms ease-in forwards',
+        'name-in': 'hop-in 200ms ease-in 150ms forwards',
+        'title-in': 'hop-in 200ms ease-in 300ms forwards',
+        'text-in': 'hop-in 200ms ease-in 450ms forwards',
+        'icons-in': 'hop-on 200ms ease-in forwards',
+        'gradient-in': 'appear 1000ms ease-out 600ms forwards',
       },
       keyframes: {
         'fade-away': {
@@ -44,41 +50,50 @@ export default {
           to: { transform: 'translateY(-50%)' }
         },
         'move1': {
-          '0%': {top: '-100px', left: '50vw'},
-          '25%': {top: '-200px', left: '-10vw'},
-          '50%': {top: '-200px', left: '50vw'},
-          '75%': {top: '-200px', left: '-200px'},
-          '100%': {top: '-100px', left: '50vw'},
+          '0%': { top: '-25vh', left: '-30vw' },
+          '25%': { top: '-20vh', left: '50vw' },
+          '50%': { top: '-15vh', left: '10vw' },
+          '75%': { top: '-25vh', left: '65vw' },
+          '100%': { top: '-25vh', left: '-30vw' },
         },
         'move2': {
-          '0%': {top: '-100px', left: 0},
-          '25%': {top: '-200px', left: '70vw'},
-          '50%': {top: '-200px', left: '-200px'},
-          '75%': {top: '-200px', left: '70vw'},
-          '100%': {top: '-100px', left: '70vw'},
+          '0%': { top: '-20vh', left: '50vw' },
+          '25%': { top: '-15vh', left: '10vw' },
+          '50%': { top: '-25vh', left: '65vw' },
+          '75%': { top: '-25vh', left: '-30vw' },
+          '100%': { top: '-20vh', left: '50vw' },
         },
         'move3': {
-          '0%': {top: '-100px', left: '30vw'},
-          '25%': {top: '-200px', left: '70vw'},
-          '50%': {top: '-200px', left: '-200px'},
-          '75%': {top: '-200px', left: '0vw'},
-          '100%': {top: '-100px', left: '30vw'},
+          '0%': { top: '-15vh', left: '10vw' },
+          '25%': { top: '-25vh', left: '65vw' },
+          '50%': { top: '-25vh', left: '-30vw' },
+          '75%': { top: '-20vh', left: '50vw' },
+          '100%': { top: '-15vh', left: '10vw' },
         },
         'move4': {
-          '0%': {top: '-100px', left: 0},
-          '25%': {top: '-200px', left: '5vw'},
-          '50%': {top: '-200px', left: '-200px'},
-          '75%': {top: '-200px', left: '70vw'},
-          '100%': {top: '-100px', left: '5px'},
+          '0%': { top: '-25vh', left: '65vw' },
+          '25%': { top: '-25vh', left: '-30vw' },
+          '50%': { top: '-20vh', left: '50vw' },
+          '75%': { top: '-15vh', left: '10vw' },
+          '100%': { top: '-25vh', left: '65vw' },
         },
         'expand': {
           '0%': {transform : 'translateX(-50%) scaleX(0%)'},
           '100%': {transform : 'translateX(-50%) scaleX(100%)'},
         },
+        'hop-in': {
+          '0%': {transform : 'translateY(-10%)', opacity: 0},
+          '100%': {transform : 'translateY(0%)', opacity: 1},
+        },
+        'hop-on': {
+          '0%': {transform : 'translateY(10%)', opacity: 0},
+          '100%': {transform : 'translateY(0%)', opacity: 1},
+        },
+        'appear': {
+          '0%': {opacity: 0},
+          '100%': {opacity: 1},
+        },
       },
-      // backgroundImage: {
-      //   'gradient': "url('media/gradient.jpeg')"
-      // }
     },
   },
   plugins: [],
