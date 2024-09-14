@@ -4,12 +4,14 @@ import ExperienceSec from './components/layouts/ExperienceSec'
 import Footer from './components/layouts/Footer'
 import Header from './components/layouts/Header'
 import ProjectSec from './components/layouts/ProjectSec'
+import ComingSoon from './components/layouts/ComingSoon'
 
 export const appContext = createContext(null)
 
 function App() {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [isSmall, setSmall] = useState(window.innerWidth <= 640);
+  const [page, setPage] = useState(0)
 
   const handleScroll = () => {
     const position = window.scrollY
@@ -34,15 +36,20 @@ function App() {
 
   return (
     <appContext.Provider value={{scrollPosition, isSmall}}>
-      <div>
-        <Header />
-        <div className='grid gap-20'>
-          <AboutSec />
-          <ProjectSec />
-          <ExperienceSec />
-          <Footer />
-        </div>
-      </div>
+      {
+        page ?
+          <ComingSoon changePage={() => setPage(0)} />
+        :
+          <div>
+            <Header />
+            <div className='grid gap-20'>
+              <AboutSec />
+              <ProjectSec changePage={() => setPage(1)} />
+              <ExperienceSec />
+              <Footer />
+            </div>
+          </div>
+      }
     </appContext.Provider>
     
   )

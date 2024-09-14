@@ -28,7 +28,7 @@ const AboutSec = () => {
         <div className='animate-color4 fixed top-[5px] left-[800px] w-[60vw] h-[70vh] bg-[#1230AE] opacity-50 rounded-full blur-3xl' />
       </div>
 
-      <p className={`font-bold text-6xl dark:text-white text-black color-trans w-min sm:w-max opacity-0 animate-name-in`}>{aboutSection.name}</p>
+      <p className={`font-bold text-6xl dark:text-white text-black color-trans w-min sm:w-max opacity-0 animate-name-in text-center`}>{aboutSection.name}</p>
       <p className={`text-xl dark:text-white text-black color-trans opacity-0 animate-title-in`}>{aboutSection.title}</p>
       <p className={`dark:text-[#D4D4D4] text-[#4f4f4f] color-trans mt-6 sm:max-w-[400px] max-w-[280px] m-2 text-center opacity-0 animate-text-in`}>{aboutSection.text}</p>
       <div className={`absolute bottom-10 opacity-0 ${scrollPosition > 10 ? 'animate-fade-out': 'animate-icons-in'} z-10`}>

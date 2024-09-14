@@ -6,7 +6,7 @@ function HeaderElement(props) {
   const {scrollPosition} = useContext(appContext)
 
   const scrollToSection = () => {
-    window.scrollTo({top: (scrollTo.offsetTop - 80), behavior: 'smooth'})
+    window.scrollTo({top: (scrollTo.offsetTop - 60), behavior: 'smooth'})
   }
 
   useEffect(() => {

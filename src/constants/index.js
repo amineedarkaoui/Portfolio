@@ -1,4 +1,7 @@
-import photo from '../media/website-mockup-psd.jpg'
+import morworkImg from '../media/morwork.jpg'
+import restaurantImg from '../media/restaurant.jpg'
+import carImg from '../media/car.jpg'
+import tictactoeImg from '../media/tictactoe.jpg'
 
 export const headerElements = [
     {id: 0, name: "About", scrollElement: 'about'},
@@ -25,20 +28,38 @@ export const projects = {
     elements: [
         {
             id: 0, 
-            title: "AI chat bot",
-            description: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly belieas necessary, making this the first true ",
-            image: photo,
-            technologies: ["React JS", "Spring", "Mongo DB"],
-            code: "https://github.com/amminnee/google-forms-api",
+            title: "Morwork",
+            description: "Morwork is a professional social media application where users can post, interact with each other and apply for jobs. The app provides a platform where like-minded individuals share work, experties and experiences.",
+            image: morworkImg,
+            technologies: ["React JS", "Spring boot"],
+            code: "https://github.com/amminnee/Morwork-app",
             link: "",
         },
         {
             id: 1, 
-            title: "AI chat bot",
-            description: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly belieas necessary, making this the first true ",
-            image: photo,
-            technologies: ["React JS", "Spring", "Mongo DB"],
-            code: "https://github.com/amminnee/google-forms-api",
+            title: "Restaurant ordering app",
+            description: "A restaurant ordering web application, where cashiers can place orders and manage menu items. The app provides a wide variety of metrics and graphs to help track and visualize different aspects of the business such as sales, trends and performance of each item of the menu.",
+            image: restaurantImg,
+            technologies: ["React JS", "Spring boot", "Tailwind CSS"],
+            code: "https://github.com/amminnee/ordering-app",
+            link: "",
+        },
+        {
+            id: 2, 
+            title: "Regrent",
+            description: "Regrent is a car rental website associated with an admin's dashboard to manage the available cars and keep track of customers reservations.",
+            image: carImg,
+            technologies: ["Django", "HTML", "CSS"],
+            code: "https://github.com/amminnee/car-rental-app",
+            link: "",
+        },
+        {
+            id: 3, 
+            title: "Tictactoe",
+            description: "Simply a tictactoe game with 2 players and a score system.",
+            image: tictactoeImg,
+            technologies: ["PyQt", "Python"],
+            code: "https://github.com/amminnee/tictactoe",
             link: "",
         },
     ]
@@ -50,9 +71,9 @@ export const experiences = {
         {
             id: 0, 
             title: "Web development Intern",
-            company: "Linkstom Group",
-            description: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly belieas necessary, making this the first true ",
-            technologies: ["React JS", "Spring", "Mongo DB"],
+            company: "Linkstom group",
+            description: "At Linkstom group, I've had the opportunity to build the backend and frontend of a restaurant ordering application, which helps managers track sales using the data visualization tools provided by the dashboard of the app.",
+            technologies: ["React JS", "Spring boot", "Tailwind CSS"],
             link: "https://linkstom.com/en",
             startDate: "APR",
             endDate: "JUN",
@@ -62,19 +83,8 @@ export const experiences = {
             id: 1, 
             title: "Web development Intern",
             company: "Ministry of agriculture",
-            description: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly belieas necessary, making this the first true ",
-            technologies: ["React JS", "Spring", "Mongo DB"],
-            link: "https://www.agriculture.gov.ma/",
-            startDate: "JULY",
-            endDate: "SEP",
-            year: "2023"
-        },
-        {
-            id: 2, 
-            title: "Web development Intern",
-            company: "Ministry of agriculture",
-            description: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly belieas necessary, making this the first true ",
-            technologies: ["React JS", "Spring", "Mongo DB", "HTML", "CSS"],
+            description: "During my internship at the Ministry of agriculture, I was tasked with developing a web application designed to manage collaborative projects, and help track each project's tasks and collaborators.",
+            technologies: ["Django", "HTML", "CSS"],
             link: "https://www.agriculture.gov.ma/",
             startDate: "JULY",
             endDate: "SEP",

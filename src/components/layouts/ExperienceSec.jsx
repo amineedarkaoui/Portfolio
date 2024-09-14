@@ -7,7 +7,7 @@ function ExperienceSec() {
   return (
     <div id='experience' className='flex flex-col items-center relative'>
       <SectionHeader text={experiences.title} />
-      <div className='m-4'>
+      <div className='m-4 sm:mx-10'>
           {
               experiences.elements.map((el, i, row) => <ExperienceCard {...el} key={el.id} isLast={(i + 1) === row.length} />)
           }

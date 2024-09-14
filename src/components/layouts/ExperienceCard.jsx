@@ -1,18 +1,18 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext } from 'react'
 import Bubbles from './Bubbles';
 import LinkTo from '../elements/LinkTo';
 import { useInView } from 'react-intersection-observer';
 import { appContext } from '../../App';
 
 function ExperienceCard(props) {
-    const {ref, inView, entry} = useInView({threshold: 0.2, triggerOnce: true})
+    const {ref, inView, entry} = useInView({threshold: 0.3, triggerOnce: true})
     const {isSmall} = useContext(appContext)
 
   return (
     <div ref={ref} className={`opacity-0 ${inView && 'animate-fade-in'} flex gap-4 max-w-[800px]`}>
       {
         !isSmall &&
-        <p className='card-small w-52'>{props.startDate} - {props.endDate} {props.year}</p>
+        <p className='card-small w-56'>{props.startDate} - {props.endDate} {props.year}</p>
 
       }
       <div className='flex flex-col items-center'>

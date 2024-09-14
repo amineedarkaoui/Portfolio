@@ -82,11 +82,11 @@ export default {
           '100%': {transform : 'translateX(-50%) scaleX(100%)'},
         },
         'hop-in': {
-          '0%': {transform : 'translateY(-10%)', opacity: 0},
+          '0%': {transform : 'translateY(-20%)', opacity: 0},
           '100%': {transform : 'translateY(0%)', opacity: 1},
         },
         'hop-on': {
-          '0%': {transform : 'translateY(10%)', opacity: 0},
+          '0%': {transform : 'translateY(30%)', opacity: 0},
           '100%': {transform : 'translateY(0%)', opacity: 1},
         },
         'appear': {
