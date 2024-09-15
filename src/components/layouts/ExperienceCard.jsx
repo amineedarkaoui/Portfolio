@@ -12,7 +12,7 @@ function ExperienceCard(props) {
     <div ref={ref} className={`opacity-0 ${inView && 'animate-fade-in'} flex gap-4 max-w-[800px]`}>
       {
         !isSmall &&
-        <p className='card-small w-56'>{props.startDate} - {props.endDate} {props.year}</p>
+        <p className='card-small min-w-20 max-w-20'>{props.startDate} - {props.endDate} {props.year}</p>
 
       }
       <div className='flex flex-col items-center'>
