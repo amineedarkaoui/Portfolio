@@ -18,7 +18,7 @@ export const aboutSection = {
 export const icons = [
     {id: 0, name: 'Instagram', icon: 'mdi:instagram', link: 'https://www.instagram.com/edarkamine/'},
     {id: 1, name: 'LinkedIn', icon: 'mdi:linkedin', link: 'https://www.linkedin.com/in/amineedarkaoui/'},
-    {id: 2, name: 'Github', icon: 'mdi:github', link: 'https://github.com/amminnee'},
+    {id: 2, name: 'Github', icon: 'mdi:github', link: 'https://github.com/amineedarkaoui'},
     {id: 3, name: 'Email', icon: 'ic:baseline-email', link: 'mailto:contact@amineedarkaoui.com'},
     {id: 4, name: 'X', icon: 'prime:twitter', link: 'https://x.com/amine__ed'},
 ]
@@ -32,7 +32,7 @@ export const projects = {
             description: "Morwork is a professional social media application where users can post, interact with each other and apply for jobs. The app provides a platform where like-minded individuals share work, experties and experiences.",
             image: morworkImg,
             technologies: ["React JS", "Spring boot"],
-            code: "https://github.com/amminnee/Morwork-app",
+            code: "https://github.com/amineedarkaoui/Morwork-app",
             link: "",
         },
         {
@@ -41,7 +41,7 @@ export const projects = {
             description: "A restaurant ordering web application, where cashiers can place orders and manage menu items. The app provides a wide variety of metrics and graphs to help track and visualize different aspects of the business such as sales, trends and performance of each item of the menu.",
             image: restaurantImg,
             technologies: ["React JS", "Spring boot", "Tailwind CSS"],
-            code: "https://github.com/amminnee/ordering-app",
+            code: "https://github.com/amineedarkaoui/ordering-app",
             link: "",
         },
         {
@@ -50,7 +50,7 @@ export const projects = {
             description: "Regrent is a car rental website associated with an admin's dashboard to manage the available cars and keep track of customers reservations.",
             image: carImg,
             technologies: ["Django", "HTML", "CSS"],
-            code: "https://github.com/amminnee/car-rental-app",
+            code: "https://github.com/amineedarkaoui/car-rental-app",
             link: "",
         },
         {
@@ -59,7 +59,7 @@ export const projects = {
             description: "Simply a tictactoe game with 2 players and a score system.",
             image: tictactoeImg,
             technologies: ["PyQt", "Python"],
-            code: "https://github.com/amminnee/tictactoe",
+            code: "https://github.com/amineedarkaoui/tictactoe",
             link: "",
         },
     ]
