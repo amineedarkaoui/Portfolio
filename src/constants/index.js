@@ -70,7 +70,7 @@ export const experiences = {
     elements: [
         {
             id: 0, 
-            title: "Web development Intern",
+            title: "Web Development Intern",
             company: "Linkstom group",
             description: "At Linkstom group, I've had the opportunity to build the backend and frontend of a restaurant ordering application, which helps managers track sales using the data visualization tools provided by the dashboard of the app.",
             technologies: ["React JS", "Spring boot", "Tailwind CSS"],
@@ -81,7 +81,7 @@ export const experiences = {
         },
         {
             id: 1, 
-            title: "Web development Intern",
+            title: "Web Development Intern",
             company: "Ministry of agriculture",
             description: "During my internship at the Ministry of agriculture, I was tasked with developing a web application designed to manage collaborative projects, and help track each project's tasks and collaborators.",
             technologies: ["Django", "HTML", "CSS"],

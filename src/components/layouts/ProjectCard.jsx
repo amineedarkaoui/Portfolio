@@ -14,7 +14,7 @@ function ProjectCard(props) {
     
       <div className='flex flex-col gap-2 sm:justify-between py-2'>
         <p className='card-title'>{props.title}</p>
-        <p className='card-text text-justify'>{props.description}</p>
+        <p className='card-text '>{props.description}</p>
         <div className='flex flex-wrap justify-between items-center gap-2'>
             <Bubbles elements={props.technologies} />
             <LinkTo text="View code" link={props.code} />

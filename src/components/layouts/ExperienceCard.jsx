@@ -32,7 +32,7 @@ function ExperienceCard(props) {
               <p className='card-title'>·</p>
               <LinkTo text={props.company} link={props.link} noMargin={true} />
           </div>
-          <p className='card-text text-justify'>{props.description}</p>
+          <p className='card-text'>{props.description}</p>
           <Bubbles elements={props.technologies} />
       </div>
     </div>
